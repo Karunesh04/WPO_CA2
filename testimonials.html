@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials - PixelNest</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .testimonial {
+        position: relative;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .testimonial:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial::before {
+        content: "\201C";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 5rem;
+        color: rgba(52, 152, 219, 0.15);
+        font-family: serif;
+      }
+
+      .testimonial-content {
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+      }
+
+      .author-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 1rem;
+        border: 3px solid #f0f0f0;
+      }
+
+      .author-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .rating {
+        color: #ffc107;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">Pixel<span>Nest</span></a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="testimonials.html" class="active">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Testimonials</h1>
+          <p>What our clients say about our services</p>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container">
+          <div class="section-title">
+            <h2>Client Reviews</h2>
+            <p>Feedback from some of our satisfied clients</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "Working with this team was an absolute pleasure. They
+                  understood our needs from the beginning and delivered a
+                  website that exceeded our expectations. Their attention to
+                  detail and responsiveness made the whole process smooth and
+                  enjoyable."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f"
+                    alt="Robert Johnson"
+                  />
+                </div>
+                <div>
+                  <h4>Robert Johnson</h4>
+                  <p>CEO, Tech Solutions</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "I was impressed by their creativity and technical expertise.
+                  They transformed our outdated website into a modern,
+                  user-friendly platform that has significantly increased our
+                  online engagement. I highly recommend their services."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                    alt="Lisa Williams"
+                  />
+                </div>
+                <div>
+                  <h4>Lisa Williams</h4>
+                  <p>Marketing Director, Style Co.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>
+                  "The team's knowledge of SEO and digital marketing helped our
+                  website gain visibility quickly. The clean design and
+                  intuitive navigation received praise from our customers. We've
+                  seen a 40% increase in online inquiries since the launch."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                    alt="Michael Davis"
+                  />
+                </div>
+                <div>
+                  <h4>Michael Davis</h4>
+                  <p>Owner, Retail Group</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "As a startup, we needed a website that would make us look
+                  professional and established. The team delivered exactly that,
+                  and more. They were patient with our revisions and offered
+                  valuable suggestions that improved the final product."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+                    alt="Sarah Thompson"
+                  />
+                </div>
+                <div>
+                  <h4>Sarah Thompson</h4>
+                  <p>Founder, Innovate Inc.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "We've worked with several web designers in the past, but this
+                  team stands out for their professionalism and technical
+                  expertise. They built us a custom e-commerce solution that
+                  perfectly fits our business model and has boosted our sales."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+                    alt="David Wilson"
+                  />
+                </div>
+                <div>
+                  <h4>David Wilson</h4>
+                  <p>E-commerce Manager, Shop Direct</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>
+                  "The mobile app they developed for us has received excellent
+                  feedback from our users. It's intuitive, fast, and has all the
+                  features we requested. Their ongoing support and maintenance
+                  services have been equally impressive."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956"
+                    alt="Jennifer Adams"
+                  />
+                </div>
+                <div>
+                  <h4>Jennifer Adams</h4>
+                  <p>Product Manager, App Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 80px; text-align: center">
+            <h2>Ready to start your project?</h2>
+            <p style="margin-bottom: 30px">
+              Contact us today to discuss how we can help your business grow
+              online.
+            </p>
+            <a href="contact.html" class="btn primary-btn">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Pixel<span>Nest</span></h3>
+            <p>A simple website built with HTML, CSS, and JavaScript.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Street, City, Country
+              </li>
+              <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+              <li><i class="fas fa-envelope"></i> info@pixelnest.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PixelNest. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
