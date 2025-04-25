@@ -66,7 +66,7 @@ self.addEventListener("fetch", (event) => {
         response ||
         fetch(event.request).catch(() => {
           if (event.request.destination === "document") {
-            return caches.match("/offline.html"); // Only fallback for pages
+            return caches.match("/offline.html"); 
           }
         })
       );
